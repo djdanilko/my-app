@@ -56,7 +56,7 @@ app.delete('/tasks/:id', (req, res) => {
 });
 
 
-app.use(express.static('public'));
+app.use(express.static(__dirname));
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
